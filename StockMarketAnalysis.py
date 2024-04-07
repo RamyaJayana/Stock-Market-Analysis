@@ -4,7 +4,7 @@ from alpha_vantage.timeseries import TimeSeries
 # Function to fetch stock data from Alpha Vantage
 def fetch_stock_data(symbol, api_key):
     ts = TimeSeries(key=api_key, output_format='pandas')
-    data, _ = ts.get_daily(symbol=symbol, outputsize='full')  # Ignoring metadata
+    data, _ = ts.get_daily(symbol=symbol, outputsize='full') 
     return data
 
 # Function to calculate moving average
@@ -13,9 +13,8 @@ def calculate_moving_average(data, window):
 
 # Main function
 def main():
-    # Replace 'YOUR_API_KEY' with your actual Alpha Vantage API key
     api_key = ' PAI8AJYVRV3U88HA'
-    symbol = 'AMZN'  # Example stock symbol (Amazon Inc.)
+    symbol = 'AMZN'  # Example stock symbol (Amazon)
 
     # Fetch stock data
     stock_data = fetch_stock_data(symbol, api_key)
