@@ -15,7 +15,7 @@ def calculate_moving_average(data, window):
 def main():
     # Replace 'YOUR_API_KEY' with your actual Alpha Vantage API key
     api_key = ' PAI8AJYVRV3U88HA'
-    symbol = 'AMZN'  # Example stock symbol (Apple Inc.)
+    symbol = 'AMZN'  # Example stock symbol (Amazon Inc.)
 
     # Fetch stock data
     stock_data = fetch_stock_data(symbol, api_key)
